@@ -1,12 +1,14 @@
 "use client";
 
+import { IconType } from "react-icons";
+
 interface ButtonProps {
   label: string;
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
   outline?: boolean;
   small?: boolean;
-  icon?: boolean;
+  icon?: IconType;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -42,9 +44,9 @@ const Button: React.FC<ButtonProps> = ({
         <Icon
           size={24}
           className="
-          absolute
-          left-4
-          top-3
+           absolute
+           left-4
+           top-3
         "
         />
       )}

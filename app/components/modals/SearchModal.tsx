@@ -94,7 +94,6 @@ const SearchModal = () => {
   }, [
     step,
     searchModal,
-    location,
     router,
     guestCount,
     roomCount,
