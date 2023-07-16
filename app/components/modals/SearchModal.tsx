@@ -41,7 +41,7 @@ const SearchModal = () => {
       dynamic(() => import("../Map"), {
         ssr: false,
       }),
-    [location]
+    []
   );
 
   const onBack = useCallback(() => {
@@ -95,6 +95,7 @@ const SearchModal = () => {
     step,
     searchModal,
     router,
+    location,
     guestCount,
     roomCount,
     bathroomCount,
