@@ -4,6 +4,7 @@ import qs from "query-string";
 import { formatISO } from "date-fns";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useMemo, useState } from "react";
+import { Range } from "react-date-range";
 
 import Modal from "./Modal";
 import CountrySelect, { CountrySelectValue } from "../inputs/CountrySelect";
